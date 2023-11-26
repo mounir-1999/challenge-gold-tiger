@@ -12,3 +12,5 @@
 - I setup mail service file, so its easy for me to use it in controller or using CLI command or in later files if needed.
 - For queueing mails in mail service, I used the built-in queues in mail facade (without creating jobs and dispatching them), as no logic is required to run with sending the mail, just send the mail using queue system.
 - I didn't set the mailtrap env variables in .env.example as the repository will be public.
+- To run CLI command, please run `php artisan mails:welcome {id}`
+- To run request against API, please run POST request to `host/api/users/{id}/welcome`
